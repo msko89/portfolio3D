@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Mobile C&amp;C</title>
+    <link type="text/css" rel="stylesheet" href="../../common/css/fonts.css" />
+    <link type="text/css" rel="stylesheet" href="../../common/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../css/com.css" />
+    <script type="text/javascript" src="../../common/js/jsLoader.js"></script>
+    <script type="text/javascript" src="../js/COM0100.js"></script>
+  </head>
+  <body>
+    <div class="wrap type01 st01 cd-3d-portfolio">
+      <header class="headerWrap topFix">
+        <div class="headerArea">
+          <button id="btnBack" class="btn_back"><span>뒤로가기</span></button>
+          <h1 class="title">출장등록</h1>
+          <button id="btnHome" class="btn_home"><span>홈버튼</span></button>
+        </div>
+        <div class="bar-graph">
+          <div class="graph">
+            <span class="bar"><span id="barGraph" class="barC"></span></span>
+            <span class="bar_bg"></span>
+          </div>
+        </div>
+      </header>
+
+      <div class="projects">
+        <div id="rotateTarget" class="row">
+          <!-- 출장등록_step01 :: START -->
+          <div class="front-face selected">
+            <section class="contentWrap scrollArea">
+              <div class="btwriteWrap">
+                <div class="titleBox">
+                  <h3 class="hTitle01">안녕하세요</h3>
+                  <span class="subText01"
+                    >출장지 관련 정보를 등록해주세요.</span
+                  >
+                </div>
+
+                <dl class="bt_line">
+                  <dt class="title dot_est">출장지</dt>
+                  <dd class="data">
+                    <select id="selBtPlaceList" class="full">
+                      <option value="">선택하세요</option>
+                      <option class="btOption"></option>
+                    </select>
+                  </dd>
+                  <dt class="title dot_est">프로젝트</dt>
+                  <dd class="data borNone">
+                    <select id="selPjList" class="full">
+                      <option value="">선택하세요</option>
+                    </select>
+                  </dd>
+                </dl>
+              </div>
+            </section>
+            <footer class="footBtn footFix">
+              <button class="bgBlue01 full btnNext"><span>다음</span></button>
+            </footer>
+          </div>
+          <!-- 출장등록_step01 :: END -->
+
+          <!-- 출장등록_step02 :: START -->
+          <div class="right-face" style="display: none">
+            <section class="contentWrap scrollArea">
+              <div class="btwriteWrap">
+                <div class="titleBox">
+                  <h3 class="hTitle01">숙박장소를 선택해주세요.</h3>
+                  <span class="subText01">가능한 숙소로 선택 바랍니다.</span>
+                </div>
+
+                <ul class="radioList">
+                  <li>
+                    <label
+                      ><input
+                        type="radio"
+                        name="rdoLodgement"
+                        value="L"
+                        checked="checked"
+                      /><span class="text">숙소</span></label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      ><input type="radio" name="rdoLodgement" value="H" /><span
+                        class="text"
+                        >호텔</span
+                      ></label
+                    >
+                  </li>
+                </ul>
+
+                <div class="titleBox st01">
+                  <h3 class="hTitle01">출장 품의서</h3>
+                  <span class="subText01"
+                    >가급적 출장품의 작성을 완료하신 후<br />출장 등록
+                    바랍니다.</span
+                  >
+                </div>
+
+                <ul class="radioList st01">
+                  <li>
+                    <label
+                      ><input
+                        type="radio"
+                        name="rdoBtDoc"
+                        value="Y"
+                        checked="checked"
+                      /><span class="text">상신</span></label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      ><input type="radio" name="rdoBtDoc" value="N" /><span
+                        class="text"
+                        >미상신</span
+                      ></label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <footer class="footBtn footFix col2">
+              <ul>
+                <li>
+                  <button class="btn_blueLine btnPrev">
+                    <span>이전</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="bgBlue01 btnNext"><span>다음</span></button>
+                </li>
+              </ul>
+            </footer>
+          </div>
+          <!-- 출장등록_step02 :: END -->
+
+          <!-- 출장등록_step03 :: START -->
+          <div class="right-face" style="display: none">
+            <section id="contentsWrap" class="contentWrap scrollArea02">
+              <div class="btwriteWrap">
+                <h4 class="hTitle01">
+                  <span class="dot_est">출장기간을 입력해주세요</span>
+                </h4>
+                <p class="smText">총 <span id="btTotalDate">0</span>일</p>
+                <div class="dayArea">
+                  <span
+                    ><input type="tel" id="inpBtStartDate" class="type01"
+                  /></span>
+                  <span class="unit">~</span>
+                  <span
+                    ><input type="tel" id="inpBtEndDate" class="type01"
+                  /></span>
+                </div>
+
+                <div class="costArea">
+                  <h4 class="hTitle01">추가비용</h4>
+                  <span class="costArea_input"
+                    ><input type="text" id="inpExtraAmt" class="type01"
+                  /></span>
+                </div>
+
+                <dl class="exArea">
+                  <dt>추가비용 상세내역</dt>
+                  <dd>
+                    <textarea
+                      id="txtMemo"
+                      placeholder="ex) 기타비용 : 비자신청 비용"
+                      maxlength="100"
+                    ></textarea>
+                  </dd>
+                </dl>
+
+                <div class="costInfo">
+                  <p class="info01">총 체재비 신청금액은</p>
+                  <p class="info01">
+                    <strong id="expTotalAmt"></strong>입니다.
+                  </p>
+                  <p class="smText02">산정 기준 : <span id="stdInfo"></span></p>
+                </div>
+              </div>
+            </section>
+            <footer class="footBtn footAb col2">
+              <ul>
+                <li>
+                  <button class="btn_blueLine btnPrev">
+                    <span>이전</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="bgBlue01 btnNext"><span>다음</span></button>
+                </li>
+              </ul>
+            </footer>
+          </div>
+          <!-- 출장등록_step03 :: END -->
+
+          <!-- 출장등록_step04 :: START -->
+          <div class="right-face" style="display: none">
+            <section class="contentWrap scrollArea">
+              <div class="btwriteWrap">
+                <div class="titleBox">
+                  <h3 class="hTitle01">마지막입니다.</h3>
+                  <span class="subText01">여권을 등록해주세요.</span>
+                </div>
+
+                <div class="photoBox">
+                  <button id="btnCamera" class="btn_blueLine" callType="camera">
+                    <span>카메라</span>
+                  </button>
+                  <button
+                    id="btnGallery"
+                    class="btn_blueLine"
+                    callType="gallery"
+                  >
+                    <span>갤러리</span>
+                  </button>
+                  <p class="info">
+                    완료 후 관리자의 승인하에<br />수정/삭제 가능합니다.
+                  </p>
+                  <p id="passportSbmtInfo" class="info02" style="display: none">
+                    "여권등록이 되어있습니다."
+                  </p>
+                </div>
+              </div>
+            </section>
+            <footer class="footBtn footFix">
+              <button id="btnSubmit" class="bgBlue01 full">
+                <span>완료</span>
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- 출장등록_step04 :: END -->
+    </div>
+  </body>
+</html>

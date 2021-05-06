@@ -1,0 +1,403 @@
+@charset "UTF-8";
+
+/* 출장목록 */
+.btDataWrap {
+  padding: 0 0 1rem 0;
+}
+.btDataWrap .btDataList {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-bottom: 1px solid #c1c1c1;
+  text-align: left;
+  background: #fff;
+}
+.btDataWrap .btDataList:first-child {
+  margin-top: 0;
+}
+.btDataList {
+  padding: 0.9rem 0.9rem 0 0.9rem;
+}
+.btDataList h2 {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+.btDataList h2 span {
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 96px;
+}
+.btDataList h2 span.state01 {
+  background: url(../../common/images/icon_state01.png) no-repeat bottom center;
+  background-size: auto 4.275rem;
+} /*등록완료*/
+.btDataList h2 span.state02 {
+  background: url(../../common/images/icon_state02.png) no-repeat bottom center;
+  background-size: auto 4.275rem;
+} /*수정요청중*/
+.btDataList h2 span.state03 {
+  background: url(../../common/images/icon_state03.png) no-repeat bottom center;
+  background-size: auto 4.275rem;
+} /*수정승인*/
+.btDataList h2 span.state04 {
+  background: url(../../common/images/icon_state04.png) no-repeat bottom center;
+  background-size: auto 4.275rem;
+} /*종결*/
+
+.bt_line {
+  display: block;
+  margin-top: 2.5rem;
+}
+.bt_line dt.title {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #2b2b2b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.bt_line dd:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.bt_line dd.data {
+  display: block;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #e1e1e1;
+  font-family: 'NotoS_B';
+  color: #3a3a3a;
+}
+.bt_line dd.data label .text {
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+  color: #3a3a3a;
+  font-size: 1rem;
+}
+.bt_line dd.data label {
+  margin-right: 2rem;
+}
+
+h4.hTitle01 {
+  text-align: center;
+}
+h4.hTitle01 .smtext {
+  font-size: 0.65rem;
+}
+.dayArea {
+  overflow: hidden;
+  padding: 0.5rem 0 0.75rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.dayArea span {
+  display: inline-block;
+  width: 46%;
+  float: left;
+}
+.dayArea span input {
+  width: 100%;
+}
+.dayArea span.unit {
+  width: 8%;
+  text-align: center;
+  line-height: 1.7rem;
+}
+.smText {
+  text-align: right;
+  color: #6e6e6e;
+  font-size: 0.7rem;
+}
+.smText02 {
+  text-align: center;
+  color: #6e6e6e;
+  font-size: 0.85rem;
+}
+.costArea {
+  overflow: hidden;
+  padding: 0.25rem 0 0.75rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+}
+.costArea_input {
+  display: inline-block;
+  padding-top: 0.25rem;
+}
+.costArea input {
+  width: 100%;
+}
+.exArea {
+  padding: 0 0 0.75rem 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.exArea dt {
+  vertical-align: top;
+  padding-top: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.exArea dd {
+  padding-top: 0.5rem;
+}
+.exArea dd textarea {
+  width: 100%;
+  height: 80px;
+  padding: 5px;
+  border: 1px solid #dfe1e3;
+  border-radius: 5px;
+}
+
+.costInfo {
+  padding: 1.5rem 0;
+  text-align: center;
+  background: #eee;
+}
+.costInfo .info01 {
+  font-size: 1.25rem;
+}
+.costInfo strong {
+  font-weight: bold;
+}
+.costInfo .smText02 {
+  padding-top: 10px;
+}
+
+.ticketBox {
+  margin-top: 0.5rem;
+  border-top: 1px solid #d1eaef;
+  border-right: 1px solid #d1eaef;
+  border-left: 1px solid #d1eaef;
+  border-radius: 5px 5px 0 0;
+  background: #f3fbff;
+  display: -moz-box; /* Firefox */
+  display: -webkit-box; /* Safari and Chrome */
+  display: box;
+}
+.ticketBox li {
+  position: relative;
+  padding: 0.6rem 0;
+  color: #676e75;
+  text-align: center;
+  font-size: 0.75rem;
+  box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-sizing: border-box;
+}
+.ticketBox li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 1.875rem;
+  background: #c0e0e6;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.ticketBox li:first-child:before {
+  width: 0;
+}
+.ticketBox li span.title {
+  display: block;
+  padding-bottom: 0.25rem;
+  font-weight: bold;
+  font-family: 'NotoS_B';
+}
+
+.titleBox.st01 {
+  margin-top: 1rem;
+}
+.radioList.st01 {
+  margin-top: 1.5rem;
+}
+
+/* 출장등록 */
+.bar-graph .graph {
+  position: relative;
+  overflow: hidden;
+}
+.bar-graph .bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 2;
+}
+.bar-graph .bar .barC {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  z-index: 2;
+  background: rgb(45, 197, 241);
+  background: -moz-linear-gradient(
+    0deg,
+    rgb(45, 197, 241) 0%,
+    rgb(28, 153, 226) 80%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(45, 197, 241) 0%,
+    rgb(28, 153, 226) 80%
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgb(45, 197, 241) 0%,
+    rgb(28, 153, 226) 80%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgb(45, 197, 241) 0%,
+    rgb(28, 153, 226) 80%
+  );
+  background: linear-gradient(
+    90deg,
+    rgb(45, 197, 241) 0%,
+    rgb(28, 153, 226) 80%
+  );
+}
+.bar-graph .bar_bg {
+  float: left;
+  width: 100%;
+  height: 4px;
+  background: #d9d9d9;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* .btwriteWrap { padding-top:1rem;} */
+.btwriteWrap .titleBox {
+  text-align: center;
+}
+.btwriteWrap .titleBox .subText01 {
+  display: inline-block;
+  padding-top: 0.5rem;
+}
+.btwriteWrap .bgBlue01 {
+  height: 2.5rem;
+}
+
+.radioList {
+  margin-top: 3rem;
+}
+.radioList li {
+  padding-bottom: 1rem;
+}
+.radioList li:last-child {
+  padding-bottom: 0;
+}
+.radioList li label .text {
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-family: 'NotoS_B';
+}
+.radioList li .smText {
+  position: relative;
+  top: 2px;
+  margin-left: 0.5rem;
+}
+
+/*step03*/
+.bt_moneyOrder {
+  display: -moz-box; /* Firefox */
+  display: -webkit-box; /* Safari and Chrome */
+  display: box;
+}
+.bt_moneyOrder > span {
+  display: block;
+  width: 45%;
+  box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-sizing: border-box;
+}
+.bt_moneyOrder > span:first-child {
+  width: 30%;
+}
+.bt_moneyOrder > span:nth-child(2) {
+  width: 25%;
+}
+.bt_moneyOrder > span label {
+  line-height: 2rem;
+}
+.bt_moneyOrder > span label input {
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+}
+
+.infoMoney {
+  color: #6e6e6e;
+  font-size: 0.7rem;
+}
+.infoMoney .infoCol {
+  display: block;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.infoMoney .infoCol > span {
+  display: inline-block;
+  width: 140px;
+  float: left;
+}
+.infoMoney .infoCol > span:first-child {
+  position: relative;
+}
+.infoMoney .infoCol > span:first-child:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: 4px;
+  width: 1px;
+  height: 12px;
+  background: #b8b8b8;
+}
+.infoMoney .infoCol .num {
+  font-size: 0.75rem;
+}
+
+/* step04 */
+.photoBox {
+  padding: 0 1rem;
+}
+.photoBox button {
+  width: 100%;
+  height: 2.25rem;
+}
+.photoBox button:first-child {
+  margin: 1.6rem 0 0.8rem;
+}
+.photoBox .info {
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6e6e6e;
+}
+.photoBox .info02 {
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #6e6e6e;
+}
+
+/* 출장상세 */
+.topInfo {
+  border-top: 1px solid #d1eaef;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  color: #45b2ea;
+  background: #e7fbff;
+}
+.topInfo strong {
+  font-weight: normal;
+}

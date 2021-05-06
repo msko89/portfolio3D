@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('style.css');/* 스타일 설정 */
+
+* {  -webkit-touch-callout: none;  -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust:none;}
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;}
+fieldset,img {border:0 none;}
+dl,ul,ol,menu,li {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
+input,select,textarea,button {font-size:100%;vertical-align:middle;}
+button {border:1px none; background-color:transparent; cursor:pointer; -webkit-tap-highlight-color :transparent; outline:none;}
+table {table-layout:fixed;border-collapse:collapse; border-spacing:0; border-spacing:0}
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0;}
+input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox}
+button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+html,body {height:100%;}
+html,body,th,td,input,select,textarea,button {font-size:20px; line-height:1.2; font-family:'NotoS_R,sans-serif','Malgun Gothic', '맑은 고딕', dotum,'돋움'; color:#39434d; letter-spacing:-1.5px;}
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+fieldset {margin:0; padding:0; border:none;-webkit-box-sizing:border-box;box-sizing:border-box;}
+legend {position:absolute; left:-1000em; top:-1000em; height:0; font-size:0; line-height:0; visibility:hidden;}
+strong {font-weight:normal;}
+em,i {font-style:normal;}
+caption,legend {display:none;visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999em;}
+img { width:100%; max-width:100%; vertical-align:top;}
+
+::selection {background:#3a7bd3; color:#fff; text-shadow: none;}
+::-webkit-input-placeholder {color:#adadad;}
+
+input[type=text], input[type=password], input[type=number], input[type=month], 
+input[type=rang], input[type=email], input[type=url], input[type=date], input[type=datetime], 
+input[type=tel], input[type=search], input[type=color] {
+	display:inline-block; height:2.5rem;margin:0; font:normal 1.25rem 'NotoS_R,sans-serif','Malgun Gothic', '맑은 고딕', dotum,'돋움'; color:#39434d; text-align:left; padding:0 .625rem; vertical-align:middle; 
+	border:0; border-bottom:1px solid #a0a0a0; border-radius:0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-appearance:none; outline:none;
+}
+input.type01 { height:1.95rem; border:1px solid #dfe1e3; border-radius:5px; color:#3a3a3a; font-size:1rem; text-align:center;}
+textarea {border:1px solid #d0d0d2;border-radius:0;box-sizing:border-box;  resize:none; outline:none; font-size:0.8rem;}
+input[type=checkbox] {width:18px; height:18px; border:1px solid #dfe1e3; border-radius:3px; -webkit-border-radius:3px; box-sizing:border-box; margin:0; vertical-align:middle; font-size:1rem; -webkit-appearance:none; outline:none;}
+input[type=checkbox]:checked {background:url(../../common/images/icon_checked.png) no-repeat center; background-size:0.75rem auto; -webkit-appearance:none;}
+input[type=radio] {position:relative;width:1rem;height:1rem;min-height:1rem;border:1px solid #dfe1e3;border-radius:1rem;-webkit-border-radius:1rem;box-sizing:border-box;margin:0; vertical-align:middle; font-size:1rem; -webkit-appearance:none; outline:none;}
+input[type=radio]:after {content:"";display:block;position:absolute;top:50%;left:50%;width:0.5rem;height:0.5rem;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%); border-radius:1rem;box-sizing:border-box;}
+input[type=radio]:checked {background-color:transparent; box-sizing:border-box;}
+input[type=radio]:checked:after {background:#2dc5f1;}
+
+/* input:disabled {opacity:0.6;} */
+button:disabled {color:#c9c9c9;background:#eee;opacity:1;-weblit-opacity:1;}
+
+select {
+	height:2rem;min-height:2rem;margin:0; padding:0 1.75rem 0 0.6rem; font-family:'NotoS_R,sans-serif','Malgun Gothic', '맑은 고딕', dotum,'돋움'; font-size:1rem;font-weight:normal;color:#3a3a3a; vertical-align:middle; text-overflow:ellipsis; 
+	background:#fff url("../images/icon_select.png") no-repeat right center; background-size:1.1rem auto; -webkit-background-size:1.1rem  auto; border:1px solid #dfe1e3; border-radius:5px;
+	-webkit-appearance:none; white-space:nowrap; overflow:hidden; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; outline:none;
+}
+
+.blind {overflow:hidden;position:absolute;width:0 !important;height:0 !important;line-height:0 !important;border:0 !important;padding:0 !important;text-indent:-9999em;}
+.block {display:block !important;}
+.none,.hide {display:none !important;}
+.align-box {display:table-cell;vertical-align:middle;}
+.ellipsis {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.full {width:100% !important;}
+.ir {position:absolute; left:-1000em; top:-1000em; height:0; font-size:0;color:transparent; line-height:0; visibility:hidden;}
+
+.textC { text-align:center !important;}
+.textR { text-align:right !important;}
+.textL { text-align:left !important;}
+.noData { padding:60px 0; text-align:center; color:#7e858c; font-size:0.75rem;}
+
+.fontRed { color:#e60012;}
+.disabled { opacity:0.6;}
+
+/*guide*/
+.wrap { width:100%; height:100%; position:relative; box-sizing:border-box; }
+.dimmed { position:fixed; left:0; top:0; right:0; bottom:0;  background:rgba(0,0,0,0.6); z-index:100;}
+.scrollArea { width:100%; overflow:hidden; -webkit-overflow-scrolling: touch; overflow-y:auto; position:absolute;/* overflow-y:auto; position:absolute;top:0;bottom:0;left:0;right:0; */}
+.scrollArea02 { overflow:hidden; -webkit-overflow-scrolling: touch; overflow-y:auto;}
+.nodata { margin-top:80px; padding-top:78px; text-align:center; color:#969a9f; background:url(../../common/images/img_nodata.png) no-repeat top center; background-size:129px auto;}
+
+@media (max-width: 320px) {
+	
+}
+
+
+
